@@ -20,7 +20,13 @@ function bot() {
     document.getElementById("input").value = "";   
     question = '<h1>where are you from?</h1>';					      	
     setTimeout(timedQuestion, 2000);
-    }   
+    }
+    else if (questionNum == 2) {
+      output.innerHTML = '<h1>I have been ' + input + ' too</h1>';
+      document.getElementById("input").value = "";
+      question = '<h1>What part of the city do you live in ' + input + '?</h1>';
+      setTimeout(timedQuestion, 2000);
+    }
 }
 
 function timedQuestion() {
